@@ -1,58 +1,35 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-// Lista inicial de amigos
-let amigos = ["Steve", "Joseph", "Jhon", "Gerard", "Marc", "Antonelly", "Jude", "Crist", "Sophia", "Alessandro"];
+# Proyecto de Lista de Amigos
 
-function agregarAmigo() {
-    // Capturar el valor del campo de entrada
-    let nombreAmigo = document.getElementById("nombreAmigo").value;
+## Descripción
 
-    // Validar la entrada
-    if (nombreAmigo.trim() === "") {
-        alert("Por favor, inserte un nombre.");
-        return;
-    }
+Este proyecto es una aplicación web simple que permite a los usuarios agregar nombres a una lista de amigos, mostrar la lista actualizada en la interfaz y seleccionar de manera aleatoria uno de los nombres almacenados en la lista. Es una herramienta útil para gestionar y sortear nombres de amigos de manera fácil y rápida.
 
-    // Actualizar el array de amigos
-    amigos.push(nombreAmigo);
+## Funcionalidades
 
-    // Limpiar el campo de entrada
-    document.getElementById("nombreAmigo").value = "";
+- **Agregar Amigos**: Los usuarios pueden ingresar el nombre de un amigo en un campo de texto y agregarlo a la lista.
+- **Mostrar Lista de Amigos:** La lista de amigos se muestra en la interfaz como una lista HTML, actualizándose cada vez que se agrega un nuevo amigo.
+- **Sortear Amigo:** Los usuarios pueden seleccionar de manera aleatoria uno de los nombres almacenados en la lista de amigos.
+- **Validación de Entrada:** Se valida que el campo de entrada no esté vacío antes de agregar un nuevo amigo.
+- **Mostrar Resultado del Sorteo:** El nombre del amigo sorteado se muestra en la interfaz.
 
-    // Actualizar la lista en la interfaz
-    actualizarListaAmigos();
-}
+## Cómo Usarlo
 
-function actualizarListaAmigos() {
-    // Obtener el elemento de la lista
-    let lista = document.getElementById("listaAmigos");
+1. **Agregar un Amigo:**
+   - Ingrese el nombre de su amigo en el campo de texto.
+   - Haga clic en el botón "Agregar".
+   - El nombre se añadirá a la lista y se mostrará en la interfaz.
 
-    // Limpiar la lista existente
-    lista.innerHTML = "";
+2. **Sortear un Amigo:**
+   - Haga clic en el botón "Sortear Amigo".
+   - Se seleccionará de manera aleatoria uno de los nombres en la lista.
+   - El nombre sorteado se mostrará en la interfaz.
 
-    // Iterar sobre el arreglo y agregar elementos a la lista
-    for (let i = 0; i < amigos.length; i++) {
-        let li = document.createElement("li");
-        li.textContent = amigos[i];
-        lista.appendChild(li);
-    }
-}
+## Ayuda
 
-function sortearAmigo() {
-    // Validar que haya amigos disponibles
-    if (amigos.length === 0) {
-        alert("No hay amigos en la lista para sortear.");
-        return;
-    }
+Si necesita ayuda con este proyecto, puede consultar la documentación del código fuente o ponerse en contacto con los autores del proyecto.
 
-    // Generar un índice aleatorio
-    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+## Autores
 
-    // Obtener el nombre sorteado
-    let amigoSorteado = amigos[indiceAleatorio];
-
-    // Mostrar el resultado
-    document.getElementById("resultadoSorteo").innerHTML = "Amigo sorteado: " + amigoSorteado;
-}
-
-// Inicializar la lista en la interfaz
-actualizarListaAmigos();
+- **Nombre del Autor:** Wilmer Chacon
+- **Correo Electrónico:** wilmerchaconcp@gmail.com
+- **GitHub:** wchaconcp
