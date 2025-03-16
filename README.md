@@ -22,11 +22,7 @@ Este proyecto es una aplicación web simple que permite a los usuarios agregar n
 2. **Sortear un Amigo:**
    - Haga clic en el botón "Sortear Amigo".
    - Se seleccionará de manera aleatoria uno de los nombres en la lista.
-   - El nombre sorteado se mostrará en la interfaz.
-
-## Ayuda
-
-Si necesita ayuda con este proyecto, puede consultar la documentación del código fuente o ponerse en contacto con los autores del proyecto.
+   - El nombre sorteado se mostrará en la interfaz
 
 ## Autores
 
