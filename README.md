@@ -6,7 +6,7 @@ Este proyecto es una aplicación web simple que permite a los usuarios agregar n
 
 ## Funcionalidades
 
-- **Agregar Amigos**: Los usuarios pueden ingresar el nombre de un amigo en un campo de texto y agregarlo a la lista.
+- **Agregar Amigos**: Los usuarios pueden agregar el nombres de amigos a la lista.
 - **Mostrar Lista de Amigos:** La lista de amigos se muestra en la interfaz como una lista HTML, actualizándose cada vez que se agrega un nuevo amigo.
 - **Sortear Amigo:** Los usuarios pueden seleccionar de manera aleatoria uno de los nombres almacenados en la lista de amigos.
 - **Validación de Entrada:** Se valida que el campo de entrada no esté vacío antes de agregar un nuevo amigo.
